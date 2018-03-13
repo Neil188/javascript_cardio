@@ -4,7 +4,8 @@
   "description": "JavaScript exercises",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test1": "node session1",
+    "test2": "node session2"
   },
   "keywords": [],
   "author": "N Lupton",
