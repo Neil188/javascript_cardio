@@ -110,7 +110,22 @@ const maxCharacter = {
 // For multiples of 3, instead of the number, print "Fizz",
 // for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5,
 // print "FizzBuzz".
-function fizzBuzz() {}
+const fizzBuzz = {
+    method1: (start=1, end=100, size=end - start + 1) =>
+        Array(size).fill(null).reduce(
+            (finalString, count, index) => {
+                const num = index + 1;
+                const nextChar =
+                    !(num % 15) ? 'FizzBuzz ' :
+                        !(num % 5) ? 'Buzz ' :
+                            !(num % 3) ? 'Fizz ' :
+                                `${num} `;
+                return finalString + nextChar
+            }
+            , ""  ).trim(),
+
+
+}
 
 
 
@@ -242,4 +257,5 @@ runTests(capitalizeLettersWithValidators, testStrings);
 console.log('\n Max Character  ******** \n');
 runTests(maxCharacterWithValidators, testWords);
 
-
+console.log('\n FizzBuzz  ******** \n');
+runTests(fizzBuzz, [undefined]);
