@@ -188,84 +188,16 @@ Object.getOwnPropertyNames(maxCharacter).forEach( (fn,i) => {
 });
 
 
-// Test data
-
-const testWords = [
-    '',
-    'a',
-    'hello',
-    'racecar',
-    'potato',
-    'javascript',
-    123,
-];
-
-const testStrings = [
-    '',
-    'hEllo, THIS is A tesT',
-    '1 a string with numbers 2',
-    'one',
-    123,
-]
-
-const testInt = [
-    0,
-    42,
-    12345678,
-    10,
-    101,
-    -5,
-    -987,
-    'a',
-];
-
-
-
-// Create a generic test runner
-
-const runTests = (fns, testArray) =>
-    testArray.forEach( n => {
-        console.log(`Testing ${n}`);
-
-        Object.getOwnPropertyNames(fns).forEach( (fn,i) => {
-            try {
-                const currentfn = fns[fn];
-                const result = currentfn(n);
-
-                console.log(`  Method ${i + 1} = ${result}`);
-            } catch(e) {
-                console.log(` ERROR -> ${e.message}`)
-            }
-        })
-
-    });
-
-
-// Run tests
-
-console.log('\n Reverse String ******** \n');
-runTests(reverseStringWithValidators, testWords);
-
-console.log('\n Is Palindrome ******** \n');
-runTests(isPalindromeWithValidators, testWords);
-
-console.log('\n Reverse Int ******** \n');
-runTests(reverseIntWithValidators, testInt);
-
-console.log('\n Capitalise letters  ******** \n');
-runTests(capitaliseLettersWithValidators, testStrings);
-
-console.log('\n Max Character  ******** \n');
-runTests(maxCharacterWithValidators, testWords);
-
-console.log('\n FizzBuzz  ******** \n');
-runTests(fizzBuzz, [undefined]);
-
-export default {
+module.exports = {
+    reverseString,
+    isPalindrome,
+    reverseInt,
+    capitaliseLetters,
+    maxCharacter,
+    fizzBuzz,
     reverseStringWithValidators,
     isPalindromeWithValidators,
     reverseIntWithValidators,
     capitaliseLettersWithValidators,
     maxCharacterWithValidators,
-    fizzBuzz,
 };

@@ -4,7 +4,7 @@
   "description": "JavaScript exercises",
   "main": "index.js",
   "scripts": {
-    "test1": "node session1",
+    "test1": "node session1/index.sandbox.js",
     "test2": "node session2"
   },
   "keywords": [],
