@@ -33,6 +33,10 @@
                 "functions": "ignore"
             }
         ],
+        "complexity": [
+            1,
+            6
+        ],
         "no-trailing-spaces": 1,
         "no-unused-vars": [
             1,
