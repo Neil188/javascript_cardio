@@ -58,10 +58,10 @@ const reverseInt = {
 }
 
 
-// CHALLENGE 4: CAPITALIZE LETTERS
-// Return a string with the first letter of every word capitalized
-// ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-const capitalizeLetters = {
+// CHALLENGE 4: CAPITALISE LETTERS
+// Return a string with the first letter of every word capitalised
+// ex. capitaliseLetters('i love javascript') === 'I Love Javascript'
+const capitaliseLetters = {
 
     // Use array methods
     method1: str =>
@@ -106,7 +106,8 @@ const maxCharacter = {
 
 
 // CHALLENGE 6: FIZZBUZZ
-// Write a program that prints all the numbers from 1 to 100.
+// Write a program that prints all the numbers, seperated by spaces,
+// from start to finish, where start defaults to 1 and end to 100.
 // For multiples of 3, instead of the number, print "Fizz",
 // for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5,
 // print "FizzBuzz".
@@ -174,10 +175,10 @@ Object.getOwnPropertyNames(isPalindrome).forEach( (fn,i) => {
     isPalindromeWithValidators[fn] = withStringValidators(isPalindrome[fn]);
 });
 
-const capitalizeLettersWithValidators = {};
-Object.getOwnPropertyNames(capitalizeLetters).forEach( (fn,i) => {
-    capitalizeLettersWithValidators[fn] =
-            withStringValidators(capitalizeLetters[fn]);
+const capitaliseLettersWithValidators = {};
+Object.getOwnPropertyNames(capitaliseLetters).forEach( (fn,i) => {
+    capitaliseLettersWithValidators[fn] =
+            withStringValidators(capitaliseLetters[fn]);
 });
 
 const maxCharacterWithValidators = {};
@@ -251,11 +252,20 @@ runTests(isPalindromeWithValidators, testWords);
 console.log('\n Reverse Int ******** \n');
 runTests(reverseIntWithValidators, testInt);
 
-console.log('\n Capitalize letters  ******** \n');
-runTests(capitalizeLettersWithValidators, testStrings);
+console.log('\n Capitalise letters  ******** \n');
+runTests(capitaliseLettersWithValidators, testStrings);
 
 console.log('\n Max Character  ******** \n');
 runTests(maxCharacterWithValidators, testWords);
 
 console.log('\n FizzBuzz  ******** \n');
 runTests(fizzBuzz, [undefined]);
+
+export default {
+    reverseStringWithValidators,
+    isPalindromeWithValidators,
+    reverseIntWithValidators,
+    capitaliseLettersWithValidators,
+    maxCharacterWithValidators,
+    fizzBuzz,
+};
