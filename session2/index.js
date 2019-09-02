@@ -39,7 +39,7 @@ const letterChanges = {
 
 }
 
-export default {
+module.exports = {
     longestWord,
     chunkArray,
     flattenArray,

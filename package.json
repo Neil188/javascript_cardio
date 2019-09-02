@@ -1,24 +1,24 @@
 {
-  "name": "javascript_cardio",
-  "version": "0.1.0",
-  "description": "JavaScript exercises",
-  "main": "index.js",
-  "scripts": {
-    "test1": "node session1/index.sandbox.js",
-    "test2": "node session2"
-  },
-  "keywords": [],
-  "author": "N Lupton",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-html": "^4.0.2",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "mocha": "^5.0.4",
-    "prettier": "^1.11.1"
-  }
+    "name": "javascript_cardio",
+    "version": "0.1.0",
+    "description": "JavaScript exercises",
+    "main": "index.js",
+    "scripts": {
+        "test1": "node session1/index.sandbox.js",
+        "test2": "node session2"
+    },
+    "keywords": [],
+    "author": "N Lupton",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^6.3.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-html": "^6.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-prettier": "^3.1.0",
+        "mocha": "^6.2.0",
+        "prettier": "^1.18.2"
+    }
 }
